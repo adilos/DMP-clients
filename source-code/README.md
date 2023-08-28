@@ -1,15 +1,18 @@
-Apify scraper - DMP clients
+# Apify scraper - DMP clients #
+
 Create Apify actor which will load clients from DMP website and converts them to JSON.
 
-Technologies
-Apify (https://apify.com/) and Crawlee (https://crawlee.dev/docs/quick-start)
-Use crawler of your choice - Cheerio, Puppeteer or Playwright
-The actor will be written in JavaScript (no Python)
-GIT for versioning
-Functional requirements
-Load all clients from this page https://www.dmpublishing.cz/en/references (make sure that you really load all :))
-Load them only from English website
-The actor will produce JSON which will look like this
+### Technologies ###
+* Apify (https://apify.com/) and Crawlee (https://crawlee.dev/docs/quick-start)
+    * Use crawler of your choice - Cheerio, Puppeteer or Playwright
+* The actor will be written in JavaScript (no Python)
+* GIT for versioning
+
+### Functional requirements ###
+* Load all clients from this page https://www.dmpublishing.cz/en/references (make sure that you really load all :))
+    * Load them only from English website    
+* The actor will produce JSON which will look like this
+```json
 {
     "TotalItems": x,
     "Clients": [
@@ -23,3 +26,10 @@ The actor will produce JSON which will look like this
         ...
     ]
 }
+```
+
+### What we want to see ###
+* Source code (in GIT) - Please create your own GIT repository on GitHub (or Bitbucket or somewhere else), commit the code there and send us the repository.
+
+If you have any questions, please contact us on e-mail tereza.vackarova@dmpublishing.cz. However, everything should be clear :)
+ 
